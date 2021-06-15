@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+// корневой компонент
+
+import logo from './../logo.svg';
 import './App.css';
 
 function App() {

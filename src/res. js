@@ -1,0 +1,67 @@
+<div className="popup popup_avatar">
+        <div className="popup__overlay"></div>
+        <form className="popup__content popup__content_size-min popup__content_avatar">
+          <div className="popup__close-icon opacity popup__close-icon-cards">+</div>
+          <h2 className="popup__title">Обновить аватар</h2>      
+          <div className="popup__item-container">
+            <input type="url" name="avatar" className="popup__item popup__item_el_link" id="input-avatar"  placeholder="ссылка на картинку" required />
+            <span className="popup__error-input" id="input-avatar--error"></span>
+          </div>
+          <button type="submit" className="popup__button popup__button_margin-none"> Сoхранить </button>
+        </form> 
+      </div>
+      <div className="popup popup_cards">
+        <div className="popup__overlay"></div>
+        <form className="popup__content popup__content_size-normal popup__content_card">
+          <div className="popup__close-icon opacity popup__close-icon-cards">+</div>
+          <h2 className="popup__title">Новое место</h2>
+          <div className="popup__item-container">
+            <input type="text" name="name" className="popup__item popup__item_el_place"  placeholder="название" id="input-place" minlength ="2" maxlength = "30" required/>
+            <span className="popup__error-input" id="input-place--error"></span>
+          </div>        
+          <div className="popup__item-container">
+            <input type="url" name="link" className="popup__item popup__item_el_link" id="input-link"  placeholder="ссылка на картинку" required/>
+            <span className="popup__error-input" id="input-link--error"></span>
+          </div>
+          <button type="submit" className="popup__button popup__button_margin-normal"> Сoхранить </button>
+        </form> 
+      </div>
+      <div className="popup popup_profile">
+        <div className="popup__overlay"></div>
+        <form className="popup__content popup__content_size-normal popup__content_profile">
+          <div className="popup__close-icon opacity popup__close-icon-profile">+</div>
+          <h2 className="popup__title">Редактировать профиль</h2>
+          <div className="popup__item-container">
+            <input type="text" name="name" className="popup__item popup__item_el_name"  placeholder="имя" id="input-name" minlength ="2" maxlength = "40" required />
+            <span className="popup__error-input" id="input-name--error"></span>
+          </div>
+          <div className="popup__item-container">
+            <input type="text" name="about" className="popup__item popup__item_el_comment"  placeholder="o себе" id="input-comment" minlength ="2" maxlength = "200" required/>
+            <span className="popup__error-input" id="input-comment--error"></span>
+          </div>        
+          <button type="submit" className="popup__button popup__button_margin-normal" disabled> Сохранить </button>
+        </form>
+      </div>
+      <div className="popup popup_delete-card">
+        <div className="popup__overlay"></div>
+        <form className="popup__content popup__content_size-min popup__content_delete-card">
+          <div className="popup__close-icon opacity popup__close-icon-delete">+</div>
+          <h2 className="popup__title">Вы уверены?</h2>      
+          <button type="submit" className="popup__button popup__button_margin-none"> Да </button>
+        </form> 
+      </div>
+
+
+       {/* <template className = "template-cards" id = "template">
+        <article className="cards__element">
+          <img src='./../src/images/Group2.png' alt="кнопка удалить" className="cards__delete-icon  opacity"/>
+          <img className="cards__image" />
+          <div className="cards__content">
+            <p className="cards__text"></p>
+            <div className="cards__block-like">
+              <div className="cards__button-like opacity"></div>
+              <p className="cards__number-like">0</p>
+            </div>          
+          </div>         
+        </article>
+      </template> */}

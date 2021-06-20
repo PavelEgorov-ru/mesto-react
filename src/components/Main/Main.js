@@ -9,7 +9,7 @@ function Main (props) {
   const [userDescription, setUserDescription] = React.useState('')
   const [userAvatar, setUserAvatar] = React.useState('')
 
-  const [cards, setCards ] = React.useState([])
+  const [cards, setCards] = React.useState([])
 
 
   React.useEffect(() => {
@@ -47,7 +47,7 @@ function Main (props) {
       </section>
       <section className="cards section section_size_wide">
         {cards.map((card) => {
-          return <Card key = {card._id} card = {card} onCardClick = {props.onCardClick}/>
+          return (<Card key = {card._id} card = {card} onCardClick = {props.onCardClick}/>)
         })}
       </section>
     </main>

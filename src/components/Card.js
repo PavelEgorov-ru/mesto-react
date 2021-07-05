@@ -1,6 +1,6 @@
 import React from 'react';
-import backet from '../../images/Group2.png'
-import {CurrentUserContext} from './../../contexts/CurrentUserContext.js'
+import backet from './../images/Group2.png'
+import {CurrentUserContext} from './../contexts/CurrentUserContext.js'
 
  function Card (props) {
   const currentUser = React.useContext(CurrentUserContext);

@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from './../Card/Card.js'
-import avatarEdit from './../../images/Vector_pen.svg';
-import profileEdit from './../../images/Vector_plus.svg';
-import {CurrentUserContext} from './../../contexts/CurrentUserContext.js'
+import Card from './Card.js'
+import avatarEdit from './../images/Vector_pen.svg';
+import profileEdit from './../images/Vector_plus.svg';
+import {CurrentUserContext} from './../contexts/CurrentUserContext.js'
 
 function Main (props) {
   const currentUser = React.useContext(CurrentUserContext)

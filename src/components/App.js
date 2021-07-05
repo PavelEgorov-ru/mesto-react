@@ -1,14 +1,14 @@
 // корневой компонент
 import React from 'react';
-import Header from './Header/Header.js';
-import Main from './Main/Main.js';
-import AddPlacePopup from './AddPlacePopup/AddPlacePopup.js'
-import EditProfilePopup from './EditProfilePopup/EditProfilePopup.js';
-import EditAvatarPopup from './EditAvatarPopup/EditAvatarPopup.js'
-import ImagePopup from './ImagePopup/ImagePopup.js';
-import Footer from './Footer/Footer.js';
+import Header from './Header.js';
+import Main from './Main.js';
+import AddPlacePopup from './AddPlacePopup.js'
+import EditProfilePopup from './EditProfilePopup.js';
+import EditAvatarPopup from './EditAvatarPopup.js'
+import ImagePopup from './ImagePopup.js';
+import Footer from './Footer.js';
 import {CurrentUserContext} from './../contexts/CurrentUserContext.js'
-import newApi from './../utils/api'
+import newApi from './../utils/api.js'
 
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false)

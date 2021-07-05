@@ -16,7 +16,7 @@ function App() {
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false)
 
   const [selectCard, setSelectCard] = React.useState({})
-  const [currentUser, setCurrentUser] = React.useState('')
+  const [currentUser, setCurrentUser] = React.useState({})
   const [cards, setCards] = React.useState([])
 
   React.useEffect(() => {

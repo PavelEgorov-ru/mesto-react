@@ -8,9 +8,9 @@ function EditProfilePopup (props) {
   const [description, setDescription ] = React.useState(currentUser ? currentUser.about : {})
 
   React.useEffect(() => {
-    setName(currentUser ? currentUser.name : '');
-    setDescription(currentUser ? currentUser.about : '');
-  }, [currentUser]);
+    setName(currentUser ? currentUser.name : {});
+    setDescription(currentUser ? currentUser.about : {});
+  }, [currentUser, props.isOpen]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -35,12 +35,12 @@ function EditProfilePopup (props) {
     button = 'Сохранить'>
       <div className="popup__item-container">
         <input type="text"  className="popup__item popup__item_el_name"  placeholder="имя" 
-        id="input-name" minLength ="2" maxLength = "40" required onChange = {handleChangeName} value = {name} />
+        id="input-name" minLength ="2" maxLength = "40" required onChange = {handleChangeName} value = {name || ''} />
         <span className="popup__error-input" id="input-name--error"></span>
       </div>
       <div className="popup__item-container">
         <input type="text"  className="popup__item popup__item_el_comment"  placeholder="о себе" 
-        id="input-comment" minLength ="2" maxLength = "200" required onChange = {handleChangeDescription} value = {description} />
+        id="input-comment" minLength ="2" maxLength = "200" required onChange = {handleChangeDescription} value = {description ||  ''} />
         <span className="popup__error-input" id="input-comment--error"></span>
       </div>
     </PopupWithForm>
